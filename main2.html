@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoleMates</title>
+    <style>
+        body {
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("images/xavier-teo-SxAXphIPWeg-unsplash.jpg"); 
+            background-size: cover;
+            color: #333;
+        }
+
+        header { 
+            background-image: url("images/paul-hanaoka-UlH7n0c63iA-unsplash.jpg") ; 
+            background-size: cover;  
+            color: rgb(0, 0, 0);
+            padding: 10px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .product {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 5px;
+            width: 200px;
+            text-align: center;
+            background-color: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #060101;
+            color: rgb(168, 16, 16);
+            bottom: 0;
+            width: 100%;
+        }
+
+        #cartButton {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            background-color: rgb(236, 120, 120);
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SoleMates</h1>
+        <h2>Cause Shoes and Feets are Ultimate BFF</h2>
+        <div>
+            <div aria-placeholder="Search">Search</div>
+        </div>
+        <button id="cartButton" onclick="Cart()">Cart</button>
+        <script>
+            function Cart() {
+                alert("This Feature will be Added Soon");
+            }
+            </script>
+    </header>
+   
+    <main>
+        <h2 style="color:burlywood;">Our Collection</h2>
+        <div class="product-container">
+            <div class="product" data-name="Shoe 1" data-price="₹5000">
+                <img src="images/puma.jpg" alt="Shoe 1">
+                <h2>PUMA</h2>
+                <p>Price: ₹5000</p>
+                <!-- For indian Rupee Use SHift+Cntrl+4 -->
+                <button onclick="my()">Buy Now</button>
+                    <script>
+                    function my() {
+                        alert("Your product will be delivered soon");
+                    }
+                    </script>    
+                    <button onclick="myFunction()">Add To Cart</button>
+                    <script>
+                    function myFunction() {
+                        alert("Item has been added to Cart");
+                    }
+                    </script> 
+            </div>
+            <div class="product" data-name="Shoe 2" data-price="₹950">
+                <img src="images/photo-1542291026-7eec264c27ff.jpg" alt="Shoe 2">
+                <h2>NIKE</h2>
+                <p>Price: ₹950</p>
+                <button onclick="my()">Buy Now</button>
+                    <script>
+                    function my() {
+                        alert("Your product will be delivered soon");
+                    }
+                    </script>    
+                    <button onclick="myFunction()">Add To Cart</button>
+                    <script>
+                    function myFunction() {
+                        alert("Item has been added to Cart");
+                    }
+                    </script> 
+            </div>
+            <div class="product" data-name="Shoe 3" data-price="₹7000">
+                <img src="images/JORDAN.jpg" alt="Shoe 3">
+                <h2>JORDAN</h2>
+                <p>Price: ₹7000</p>
+                <button onclick="my()">Buy Now</button>
+                    <script>
+                    function my() {
+                        alert("Your product will be delivered soon");
+                    }
+                    </script>    
+                    <button onclick="myFunction()">Add To Cart</button>
+                    <script>
+                    function myFunction() {
+                        alert("Item has been added to Cart");
+                    }
+                    </script> 
+            </div>
+            <div class="product" data-name="Shoe 4" data-price="₹860">
+                <img src="images/Campus.jpg" alt="Shoe 4">
+                <h2>CAMPUS</h2>
+                <p>Price: ₹860</p>
+                <button onclick="my()">Buy Now</button>
+                    <script>
+                    function my() {
+                        alert("Your product will be delivered soon");
+                    }
+                    </script>    
+                    <button onclick="myFunction()">Add To Cart</button>
+                    <script>
+                    function myFunction() {
+                        alert("Item has been added to Cart");
+                    }
+                    </script>    
+            </div>
+            <div class="product" data-name="Shoe 5" data-price="₹900">
+                <img src="images/WOODLAND.jpg" alt="Shoe 5">
+                <h2>WOODLAND</h2>
+                <p>Price: ₹900</p>
+                    <button onclick="my()">Buy Now</button>
+                    <script>
+                    function my() {
+                        alert("Your product will be delivered soon");
+                    }
+                    </script>    
+                    <button onclick="myFunction()">Add To Cart</button>
+                    <script>
+                    function myFunction() {
+                        alert("Item has been added to Cart");
+                    }
+                    </script>
+            </div>
+            <div class="product" data-name="Shoe 6" data-price="₹1865">
+                <img src="images/ADIDAS.webp" alt="Shoe 6">
+                <h2>ADIDAS</h2>
+                <p>Price: ₹1865</p>
+                <button onclick="my()">Buy Now</button>
+                    <script>
+                    function my() {
+                        alert("Your product will be delivered soon");
+                    }
+                    </script>    
+                    <button onclick="myFunction()">Add To Cart</button>
+                    <script>
+                    function myFunction() {
+                        alert("Item has been added to Cart");
+                    }
+                    </script>
+            </div>
+        <footer>
+            © All rights Reserved      
+        </footer>
+        <!-- go to windows and then type  Charecter Map   -->
+        
+</body>
+</html>
+
+    
+<!-- When you apply display: flex; to a container, it turns the container into a flex container, allowing you to arrange its child elements (flex items) in various flexible ways. -->
+
